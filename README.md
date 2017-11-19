@@ -38,3 +38,5 @@ Done with pushups
 
 You can build this from source (it is written in Go) or download the
 [latest release of voiceworkout](https://github.com/kljensen/voiceworkout/releases).
+It does not compile on windows right now because of using the
+[https://github.com/pkg/term](term) package.
