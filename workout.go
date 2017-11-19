@@ -21,12 +21,12 @@ func (ex *exercise) getBeginAnnouncement() string {
 	if ex.IsTimed {
 		units = "seconds"
 	}
-	template := "Now doing %s. Do %s for %d %s"
+	template := "Now doing %s. Do %s for %d %s."
 	return fmt.Sprintf(template, ex.Instruction, ex.Instruction, ex.Number, units)
 }
 
 func (ex *exercise) getEndAnnouncement() string {
-	return fmt.Sprintf("Done with %s", ex.Instruction)
+	return fmt.Sprintf("Done with %s.", ex.Instruction)
 }
 
 func (ex *exercise) begin(s speaker) error {
