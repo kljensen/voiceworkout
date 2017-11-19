@@ -1,11 +1,15 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 )
 
+const version = "v1.1"
+
 func main() {
+	fmt.Printf("voiceworkout %s\n", version)
 	if len(os.Args) < 2 {
 		log.Fatalln("Input file is missing.")
 	}
