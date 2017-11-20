@@ -26,6 +26,8 @@ exercises:
     istimed: false
 ```
 
+A more thorough routine is
+[https://gist.github.com/kljensen/49ecc10a1440d3efc1043eabf57463b4](in this gist).
 That will yield output similar to the following
 
 ```
