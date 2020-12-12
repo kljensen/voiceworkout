@@ -15,7 +15,7 @@ voiceworkout routine.yaml
 
 where `routine.yaml` has contents something like the following:
 
-yaml```
+```yaml
 title: Example routine
 exercises:
   - instruction: band dislocations
@@ -38,7 +38,25 @@ Now doing pushups. Do pushups for 50 repps and hit any key when finished
 Done with pushups
 ```
 
+## Installation 
+
 You can build this from source (it is written in Go) or download the
 [latest release of voiceworkout](https://github.com/kljensen/voiceworkout/releases).
 It does not compile on windows right now because of using the
 [https://github.com/pkg/term](term) package.
+
+Or, if you are a [homebrew](https://brew.sh/) user, you can install
+`voiceworkout` via the [kljensen/tap](https://github.com/kljensen/homebrew-tap)
+tap using either
+
+```
+brew install kljensen/tap/voiceworkout
+```
+
+or
+
+```
+brew tap kljensen/tap
+brew install voiceworkout
+```
+
