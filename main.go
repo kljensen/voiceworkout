@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-const version = "v1.1"
+const version = "v1.3"
 
 func main() {
 	fmt.Printf("voiceworkout %s\n", version)
