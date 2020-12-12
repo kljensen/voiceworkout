@@ -1,0 +1,24 @@
+
+on:
+  push:
+    tags: 'v*'
+
+name: 'publish-releases'
+
+jobs:
+  homebrew:
+    name: Publish release to kljensen/homebrew-tap 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mislav/bump-homebrew-formula-action@v1
+        if: "!contains(github.ref, '-')" # skip prereleases
+        with:
+          formula-name: 'voiceworkout'
+          homebrew-tap: 'kljensen/homebrew-tap'
+          base-branch: 'main'
+          commit-message: '{{formulaName}} {{version}}'
+        env:
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
+
+
+
